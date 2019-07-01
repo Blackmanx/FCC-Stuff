@@ -69,18 +69,13 @@ function inIframe () {
     } catch (e) { return true; } 
 }
 
-const getRandomQuoteAuthor = (quoteArr) => {
-let index = Math.floor(Math.random()*quoteArr.length);
-let rquote = quoteArr[index, 1];
-let rauthor = quoteArr[index, 0];
-setVariables([rauthor, rquote, index]); 
-};
+
 
 let quote = "";
 let author = "";
 let index = "";
 
-const setVariables = ( variables = getRandomQuoteAuthor(quotes)) => {
+const setVariables = ( variables) => {
 author = variables[0];
 quote = variables[1];
 index = variables[2];
@@ -98,39 +93,44 @@ const getIndex = () => {
     return index;
 }
 
-if (inIframe())
-{
-    $(".quote-text").animate({
+const getRandomQuoteAuthor = (quoteArr) => {
+    let index = Math.floor(Math.random()*quoteArr.length);
+    let rquote = quoteArr[index, 1];
+    let rauthor = quoteArr[index, 0];
+    setVariables([rauthor, rquote, index]); 
+    
+    if (inIframe())
+    {
+        $(".quote-text").animate({
         opacity: 0
-    }, 500,
-    function () {
-        $(this).animate({
+        }, 500,
+        function () {
+            $(this).animate({
             opacity: 1
             }, 700);
         $("#text").text(quote)
-    });
+        });
 
-    $(".quote-author").animate({
+        $(".quote-author").animate({
         opacity: 0
-    }, 500,
-    function () {
+        }, 500,
+        function () {
         $(this).animate({opacity: 1}, 700);
         $("#author").text(author)
-    });
+        });
     
-    $("html body").animate({
+        $("html body").animate({
         backgroundColor: colors[randColor(colors)],
         color: colors[randColor(colors)]
-    }, 1000);
+        }, 1000);
 
-    $(".btn").animate({
+        $(".btn").animate({
         backgroundColor: colors[randColor(colors)],
         color: colors[randColor(colors)]
-    }, 1000)
-}
-
+        }, 1000)
+    }
+};
 $document.ready( function(){
-    
 
 }
 );

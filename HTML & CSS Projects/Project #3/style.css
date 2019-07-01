@@ -1,0 +1,306 @@
+body{
+    background: url(deltarune.jpg) no-repeat center center fixed !important;
+    background: url(https://orig02.deviantart.net/9fdf/f/2016/105/3/9/delta_rune_by_dj_applej_sound-d9z14ek.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: violet;
+    font-family: Courier New, Courier, monospace;
+}
+@font-face {
+    font-family: "deltarune";
+    src: url('./8bitoperator.ttf') format('truetype');
+}
+h1{
+    font-family: "deltarune", Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 2px 2px lightgray;
+    background-color: rgb(170, 171, 175);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+        font-family: "deltarune", Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 30px;
+        text-shadow: 2px 2px gray;
+        margin-top: 40px;
+        width: 80%;
+        background-color: rgb(170, 171, 175);
+        margin-left: auto;
+        margin-right: auto;
+}
+
+h3{
+        font-family: "deltarune", Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 20px;
+        text-shadow: 2px 2px gray;
+        margin-top: 10px;
+        width: 80%;
+        background-color: rgb(170, 171, 175);
+        margin-left: auto;
+        margin-right: auto;
+
+}
+
+
+
+#header{
+    top: -8px;
+    position: fixed;
+}
+#header-img{
+    height: 6.2vh;
+    width: 10vw;
+    min-height: 35px;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+
+}
+
+.wrapper-box{
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 90%;
+    height: 90%;
+    background-color: rgba(249, 252, 252, 0.90);
+    padding: 1%;
+}
+
+.tdesc{
+    text-align: center;
+}
+#video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 640px;;
+    height:480px;
+}
+#formbox{
+    width: 43vw;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    background-color: rgb(65, 49, 114);
+    padding: 2%;
+}
+
+#demoid{
+    width: 50% !important;
+}
+#email{
+    margin-top: 3px;
+    width: 80%;
+    height: 35px;
+    color: white;
+    background-color: #162127;
+    box-shadow: 1px 0px 0px 2px rgba(86, 89, 91, 0.90)
+}
+
+#submit{
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px 24px;
+}
+
+#submit:hover:not(.active){
+    background-color: goldenrod;
+    color: black;
+}
+
+
+    /*Nav bar*/
+
+
+#navId{
+    background-color: black;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 90%;
+    left: 10%;
+    
+}
+
+#navId li{
+    text-align: center;
+    float: right;
+    border-right: 2px solid white;
+    border-radius: 2px;
+}
+
+li .nav-link{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    font-family: monospace, Franklin Gothic Medium, Arial Narrow, Arial, sans-serif;
+    transition-property: background;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+li:last-child{
+    border-left: 2px solid white;
+}
+
+
+li .nav-link:hover:not(.active){
+    background-color: goldenrod;
+    color: black;
+}
+
+.active {
+    background-color: rgb(156, 33, 165);
+    color: white;
+}
+
+#grid-wrapper{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.boxgrid{
+   border: 1px solid grey;
+   background-color: transparent;
+   margin-left: 3%;
+}
+
+.gridimg{
+    display: block;
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.gtext{
+    font-family: "deltarune", Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 10px;
+    padding: 0% 7% 0% 7%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+.centered-s{
+    font-size: 10px;
+    display: block;
+    text-align: center !important;
+    margin-top: 10px;
+}
+
+
+.boxflex{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 300%;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 13px;
+}
+.pricebtn{
+    order: 0;
+    background-color: white;
+    color: black;
+    padding: 10px 24px;
+    transition-property: background;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    box-shadow: 2px 1px 2px black;
+}
+
+.pricebtn:hover{
+    background-color: black;
+    color: white;
+}
+
+.pricebtn:hover span {display:none}
+.pricebtn:hover:before {content:"Buy!"}
+
+#susiebtn:hover{
+    box-shadow: 1px 0px 0px 2px rgb(110, 3, 92);
+}
+
+#krisbtn:hover{
+    box-shadow: 1px 0px 0px 2px rgb(61, 143, 250);
+}
+
+#ralseibtn:hover{
+    box-shadow: 1px 0px 0px 2px rgb(17, 206, 17);
+}
+
+footer {
+    margin-top: 20px;
+    clear: left;
+    width: 100%;
+    background: #ccc;
+    padding: 4px 0;
+    text-align: right;
+}
+footer p{
+    margin-right: 2%;
+    color: #555;
+    font-family: monospace, Arial, Helvetica, sans-serif;
+}
+
+
+
+@media screen and (max-width: 640px){
+    #navId{
+        width: 100%;
+        left: 0px;
+        top: 0px;
+    }
+    #navId li {
+        float: none; 
+        border-bottom: 1px solid white;
+        border-right: none;
+    }
+    li:last-child{
+        border-left: none;
+    }
+    #video{
+    width:70vw;
+    height:30vh;
+    }
+
+    #email{
+        font-size: 3.4vw;
+    }
+
+    #submit{
+        margin-top: 10px;
+        background-color: black;
+        color: white;
+        padding: 10px 24px;
+
+    }
+    #header-img{
+    width: 30vw;
+}
+}
+

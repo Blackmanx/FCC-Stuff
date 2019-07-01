@@ -1,0 +1,1 @@
+{"index.js":"function steamrollArray(arr) {\n  // I'm a steamroller, baby\n  return arr.toString().replace(/,+/g, \",\").split(\",\").map( (item) => (item == {}) ? {} : (isNaN(item)) ? item : parseInt(item));\n}\n\nsteamrollArray([1, [2], [3, [[4]]]]);"}

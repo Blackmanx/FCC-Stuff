@@ -1,0 +1,1 @@
+{"index.js":"function findElement(arr, func) {\nlet num = 0;\nwhile (arr != null){\n  num = arr.shift();  // Return and delete the first element\n  if (func(num)) return num;\n}\n  \n  if (func != null) return undefined; // If the function isn't num == null, then\n}\n\nfindElement([1, 2, 3, 4], num => num % 2 === 0);"}

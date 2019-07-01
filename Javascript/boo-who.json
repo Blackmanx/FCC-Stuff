@@ -1,0 +1,1 @@
+{"index.js":"function booWho(bool) {\nreturn (bool === true) ? true : (bool === false) ? true : false;\n}\n\nbooWho(null);"}

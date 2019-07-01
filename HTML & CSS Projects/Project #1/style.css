@@ -1,0 +1,81 @@
+#tribute-info{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+    color: darkgoldenrod;
+    font-family: sans-serif;
+    padding: 1% 1%;
+    box-shadow: 3px 0px 5px 0px rgba(0,0,0,0.75);
+    margin-top: 3%;
+  }
+  #smol{
+    width: 50%;
+  }
+  .title{
+    color:black;
+  }
+  #wrapper {
+    background-color: darkslategray !important;
+    color: black !important;
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3%;
+  }
+  .tribute-link{
+    text-align: center;
+    width: 100%;
+    background-color: #800000;
+    border-color: grey;
+    padding-top: 10px;
+    box-shadow: 1px 1px white;
+    margin-top: 1%;
+  }
+  body{
+    background-color: white;
+    color: black;
+    font-family: monospace;
+    font-size: 14px;
+  }
+  .h3info{
+    text-align: justify;
+  }
+  .title {
+  text-align: center;
+  display: block;
+  }
+  .list {
+    text-align: justify;
+    position: relative;
+    left: 20%;
+  }
+  .navlink{
+    text-decoration: none;
+    text-decoration-color: coral;
+    color: coral;
+
+  }
+  
+  #notsosmol{
+    width:90%;
+  }
+    #image {
+  width: 100%;
+  height: auto;
+  max-width: 625px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 4%;
+  }
+    #navId {
+      width: 50%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      padding-bottom: 3%;
+      border: 1px 1px 1px 1px black;
+  }

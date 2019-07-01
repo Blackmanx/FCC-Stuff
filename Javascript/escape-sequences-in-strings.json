@@ -1,0 +1,1 @@
+{"index.js":"var myStr = 'FirstLine\\n\\t\\\\SecondLine\\nThirdLine'; // Change this line\n\n/*\n\\'\tsingle quote\n\\\"\tdouble quote\n\\\\\tbackslash\n\\n\tnewline\n\\r\tcarriage return\n\\t\ttab\n\\b\tbackspace\n\\f\tform feed\n*/"}

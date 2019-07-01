@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="deltaicon.ico"/>
+    <title>FCC - A Landing Product</title>
+    
+</head>
+
+<body>
+<header id=header>
+    <nav id=nav-bar>
+        <ul id="navId">
+            <li><a class="nav-link" href="#support" id="faqbtn" onclick="replaceClass(this.id, 'nav-link active');">Support</a></li>
+            <li><a class="nav-link" href="#demoid" id="pbtn" onclick="replaceClass(this.id, 'nav-link active')">Demo</a></li>
+            <li><a class="nav-link" href="#video" id="vbtn" onclick="replaceClass(this.id, 'nav-link active')">Video</a></li>
+            <li><a class="nav-link active" href="#home_html" id="homebtn" onclick="replaceClass(this.id, 'nav-link active')">Home</a></li>
+            <!-- 
+                GOD
+                DAMN0 IT FCC, LET ME PUT OTHER PAGES INSIDE THE NAV!
+            -->
+        </ul>
+    </nav>
+    <a href="index.html"><img id="header-img" src="deltaicon.png" alt="Logo Deltarune"></a>    
+</header>
+
+<div class="wrapper-box box">
+        <h1 id="home_html">DELTARUNE</h1>
+        <h6 class="tdesc">A RPG/Bullet hell-like game where you don't have to kill... anyone?</h6>
+    <iframe id="video" src="https://www.youtube.com/embed/tcxQm_QZYJI"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2 id="demoid">DEMO</h2>
+
+    <form id="form" action="https://www.freecodecamp.com/email-submit" method="GET">
+        <fieldset id="formbox">
+            <p style="text-align:center; font-weight: bold">Get a demo copy free:</p>
+            <input id="email" name="email" type="email" placeholder="Please introduce your email." required><br/>
+            <input id="submit" type="submit" value="Send me the demo!">
+        </fieldset>
+    </form>
+    <h2 id="support">SUPPORT</h2>
+    <div id="grid-wrapper">
+
+        <div class="box boxgrid">
+            <h3>The Kris Pack</h3>
+            <img src="kris.png" class="gridimg" alt="Kris">
+            <p class="gtext">The Kris Pack will grant you the original
+                soundtrack of the game, the game itself, andincludement
+                of a name of your choice to the credits.
+                <br>
+                <br>
+                <br>
+                <br>
+                <span class="centered-s">You can also ask for a DRM-Free copy with this pack.</span>
+            </p>
+
+
+
+        </div>
+
+        <div class="box boxgrid">
+            <h3>The Susie Pack</h3>
+            <img src="susie.png" class="gridimg" alt="Susie">
+            <p class="gtext">
+                    The Susie Pack will grant you the original
+                    soundtrack of the game <b>in a physical album,
+                    made with vynil records with their own cover art</b>;
+                    the game itself, and includement
+                    of a name of your choice to the credits.
+                    <br>
+                    <br>
+                    <br>
+                    <span class="centered-s">You can also ask for a DRM-Free copy with this pack.</span>
+
+            </p>
+
+        </div>
+
+        <div class="box boxgrid">
+            <h3>The Ralsei Pack</h3>
+            <img src="ralsei.png" class="gridimg" alt="Ralsei">
+            <p class="gtext">
+                The Ralsei Pack will grant you the original
+                soundtrack of the game in a physical album,
+                made with vynil records with their own cover art;
+                the game itself, and includement
+                of a name of your choice to the credits.
+                <br>
+                <b>You will also be able to send me a design of a secret boss you want added to the game.</b>
+                <span class="centered-s">You can also ask for a DRM-Free copy with this pack.
+
+                </span>
+            </p>
+        </div>
+
+        <div class="boxflex">
+                    <button class="pricebtn" id="krisbtn"><span>9.99$</span></button>
+
+                    <button class="pricebtn" id="susiebtn" ><span>19.99$</span></button>
+          
+                    <button class="pricebtn" id="ralseibtn" ><span>49.99$</span></button>
+
+        </div>
+    </div>
+</div>
+  
+<footer>
+    <p>Deltarune 2018 ©</p>
+</footer>
+</body>
+<script>
+        function replaceClass(b,MyClass){ // Replacing a class from element a to element b.
+            var a = checkClass(MyClass);
+            if (a.localeCompare(b) != 0){
+            remaddClass(a, "nav-link");
+            remaddClass(b, "nav-link active")
+            }  
+        }
+        
+        function remaddClass(MyElement, MyClass){
+            document.getElementById(MyElement).className = MyClass;
+        }
+        
+        function checkClass(MyClass){
+            var x = document.getElementsByClassName(MyClass)[0].id; 
+            return x;
+        }
+        </script>
+</html>
+

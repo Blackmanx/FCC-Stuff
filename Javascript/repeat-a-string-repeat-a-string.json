@@ -1,0 +1,1 @@
+{"index.js":"function repeatStringNumTimes(str, num) {\n// Hm, this is an easy one. \n// I wonder if we can do it more optimal than with a loop. \n// Let's do a recursive one, shall we.\nreturn (num < 0) ? \"\" : (num === 1) ? str : str + repeatStringNumTimes(str, num-1);\n}\nrepeatStringNumTimes(\"abc\", 3);\n"}
